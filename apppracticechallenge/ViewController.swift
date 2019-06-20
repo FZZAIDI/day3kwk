@@ -9,12 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var password = "Fatemah"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var textBox: UITextField!
+
+    @IBAction func buttonSubmit(_ sender: UIButton) {
+
+        //        resetDisplay()
+        var myText = textBox.text
+        if myText == password {
+        print("Success")
+        }
+        else {
+        print("Invalid. Try Again.")
     }
-
+}
+    @IBOutlet weak var labelPassword: UILabel!
 
 }
+//
+
+    
+    
 
